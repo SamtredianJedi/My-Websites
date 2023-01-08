@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title> University Website Design </title>
 </head>
@@ -20,7 +20,8 @@
 
         <nav>
             <a href="index.html"><img src="./src/images/logo.png" alt="Image Is not found"></a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">About</a></li>
@@ -30,6 +31,7 @@
 
                 </ul>
             </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
         </nav>
 
         <div class="text-box">
@@ -44,6 +46,44 @@
     </section>
 
 
+    <!-- Course -->
+
+    <section class="course">
+        <h1> Courses We Offer</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis corrupti magnam numquam ut natus fugiat similique voluptatibus dolorem sunt saepe. Assumenda porro amet possimus perspiciatis explicabo dignissimos perferendis incidunt deleniti.
+        </p>
+
+
+        <div class="row">
+            <div class="course-col">
+                <h3>intermediate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis non debitis laborum voluptatum ipsa sapiente nobis odio voluptates. Et nesciunt perferendis aliquid obcaecati perspiciatis eligendi officia iure in maiores doloribus?</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis non debitis laborum voluptatum ipsa sapiente nobis odio voluptates. Et nesciunt perferendis aliquid obcaecati perspiciatis eligendi officia iure in maiores doloribus?</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis non debitis laborum voluptatum ipsa sapiente nobis odio voluptates. Et nesciunt perferendis aliquid obcaecati perspiciatis eligendi officia iure in maiores doloribus?</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Javascript for Toggle Menu -->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
 </body>
 
 </html>
